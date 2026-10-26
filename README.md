@@ -26,6 +26,27 @@ npm run typecheck
 npm start         # then scan the QR code with the Expo Go app on your phone
 ```
 
+## What works today
+
+- Home: your categories with how many items each has and your #1
+- Category: ranked list with scores, public/private toggle, add button
+- Add: name, purchase link (things) or address (places), notes, liked / fine / didn't like
+- Compare: "which is better?" one question per screen until the item finds its spot
+- Item: rank, score, link, notes, remove
+- Create your own categories (things or places)
+- Everything is saved on your phone (no account yet)
+
+## Code map
+
+```
+App.tsx                      screen navigation and the ranking flow
+src/ranking/ranking.ts       comparison + scoring engine
+src/store/                   app data, saving to the phone
+src/screens/                 one file per screen
+src/data/defaultCategories.ts
+src/theme.ts                 colors and spacing
+```
+
 ## Stack
 
 React Native + Expo, TypeScript. Planned: Supabase (auth, database, photos), Google Places API.

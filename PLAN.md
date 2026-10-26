@@ -81,7 +81,7 @@ Rankings and scores are computed within one user + one category, so each categor
 1. **Paper/Figma sketch** (1 evening): the 4 core screens — category list, ranked list, add item, comparison prompt.
 2. **Set up the repo**: Expo + TypeScript project, pushed to GitHub. ✅ Done
 3. **Build the ranking logic first, offline**: `src/ranking/ranking.ts` plus tests. ✅ Done. This is the heart of the app — get it right before UI.
-4. **Local-only prototype**: store data on-device (AsyncStorage/SQLite). Use it yourself for a week on real stuff.
+4. **Local-only prototype**: store data on-device (AsyncStorage). ✅ Screens built — next: use it yourself for a week on real stuff.
 5. **Add Supabase**: auth + sync so data survives a phone change.
 6. **Polish + TestFlight**: share with 5–10 friends, watch what categories they actually create.
 7. **Then** decide on social features.
